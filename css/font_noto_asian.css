@@ -1,0 +1,59 @@
+
+
+/* Google Webfont */
+
+@font-face {
+  font-family: 'NotoSansHant';
+  font-style: normal;
+  font-weight: 100;
+  src: local('NotoSansHant-Thin'), local('NotoSansHant-Thin'), url(http://www.aten.com.tw/webfont/tc/NotoSansHant-Thin.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoSansHant';
+  font-style: normal;
+  font-weight: 300;
+  src: local('NotoSansHant-Light'), local('NotoSansHant-Light'), url(http://www.aten.com.tw/webfont/tc/NotoSansHant-Light.otf) format('opentype');
+}
+
+
+@font-face {
+  font-family: 'NotoSansHant';
+  font-style: normal;
+  font-weight: 350;
+  src: local('NotoSansHant-DemiLight'), local('NotoSansHant-DemiLight'), url(http://www.aten.com.tw/webfont/tc/NotoSansHant-DemiLight.otf) format('opentype');
+}
+
+
+@font-face {
+  font-family: 'NotoSansHant';
+  font-style: normal;
+  font-weight: 400;
+  src: local('NotoSansHant-Regular'), local('NotoSansHant-Regular'), url(http://www.aten.com.tw/webfont/tc/NotoSansHant-Regular.otf) format('opentype');
+}
+
+
+@font-face {
+  font-family: 'NotoSansHant';
+  font-style: normal;
+  font-weight: 500;
+  src: local('NotoSansHant-Medium'), local('NotoSansHant-Medium'), url(http://www.aten.com.tw/webfont/tc/NotoSansHant-Medium.otf) format('opentype');
+}
+
+
+@font-face {
+  font-family: 'NotoSansHant';
+  font-style: normal;
+  font-weight: 700;
+  src: local('NotoSansHant-Bold'), local('NotoSansHant-Bold'), url(http://www.aten.com.tw/webfont/tc/NotoSansHant-Bold.otf) format('opentype');
+}
+
+
+@font-face {
+  font-family: 'NotoSansHant';
+  font-style: normal;
+  font-weight: 900;
+  src: local('NotoSansHant-Black'), local('NotoSansHant-Black'), url(http://www.aten.com.tw/webfont/tc/NotoSansHant-Black.otf) format('opentype');
+}
+
+

@@ -1,0 +1,2711 @@
+
+/* 讓所有數值皆有漸移的動態,此處 section 為 html 既有的 tag, Microsite 共用 */ 
+section div:not([class^="Stage_pic_slide_mask_slide"]) {
+    transition: all 0.3s ease-in-out 0s;
+}
+
+
+
+
+/* 讓所有數值皆有漸移的動態, 除了 section_3 之外,因為會影響到 PadClient 動畫播放 
+#section_1 div, #section_5 div, #section_6 div{
+    transition: all 0.3s ease-in-out 0s;
+}
+*/	
+
+
+
+/*
+        #section_5 .section_block .page_txt2 li{ padding-left: 1em; text-indent: -1em; padding-bottom:8px; }
+    #section_5 .section_block .page_txt2 li:before { content: "\2022"; padding-right:7px; }
+*/
+
+
+
+#section_5 .section_block .page_txt_s li{ padding-left: 1em; text-indent: -1em; padding-bottom:5px; }
+#section_5 .section_block .page_txt_s li:before { content: "\2022"; padding-right:7px; }
+#section_1 .pic,#section_1 .pic img{width:100%;}
+#section_1 .pic,#section_1 .pic img{width:100%;transition:all 300ms ease-in-out 0s}
+#section_1 .pic,#section_1 .pic img{ 
+    transition: all 300ms ease-in-out 0s;
+    overflow: hidden;
+    height: 100%;
+}
+
+
+	#section_5 .qrcode img {
+		/**width: 25%;**/
+		width: 53%;
+}
+
+#section_3 .chgbtn{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#section_3 .chgbtn.active{
+    opacity: 1;
+    cursor: default;
+}
+
+
+
+#section_1 .page_title, .page_title span{
+    font-weight:100;	
+    letter-spacing:-0.02em;
+}
+
+
+#section_1 .page_stitle, .page_stitle span{
+    font-weight:300;	
+    letter-spacing:-0.00em;
+}
+
+
+
+
+#section_1  div.pic img.zoomIn{
+    transform: scale(1.1);
+    moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+/* 圖片滑過色塊變橘色 */
+figcaption{   
+    /* background-color: rgba(255, 120, 0, 0.75); */
+	/* background-color: rgba(223, 69, 0, 0.80); */
+	background-color: rgba(0, 0, 0, 0.70);
+    font-size: 15px;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    padding: 25% 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out 0s;/*底圖顏色漸變消失*/
+}
+
+figcaption.hover{   
+    opacity: 1;
+    transition: all 0.5s linear 0s; /*底圖顏色漸變出現*/
+}
+
+
+
+    #section_1 div.TitleHoverColor .page_title{
+        /* color:#fff; */
+		color:#ff7800;
+    }
+
+    #section_1 div.TitleHoverColor .imgBlockSubTitle{
+        color:rgba(255, 255, 255, 0.75);
+    }
+	
+	
+
+	
+	
+
+	/* 兩個要設一樣的高度,切換場景才會一樣高 */
+	#section_3 .item {
+    height:820px;
+    }
+	
+	#section_3 .card .content{
+    height:820px;
+    }
+
+
+
+
+
+
+	#section_3 .page_stitle{
+		margin-bottom:50px;
+    }
+	
+	
+	#section_3 .page_txt{
+		margin-bottom:0px;
+    }
+	
+	
+	#section_3 .page_stitle1{
+		font-weight:400;
+    }
+	
+	#section_3 .accessories{
+		text-align:center;
+		font-weight:400;
+
+}
+
+
+
+	#section_3 .features_banner{
+	    -webkit-transform:scale(0.6);	
+        -moz-transform:scale(0.6);
+        transform:scale(0.6);
+		margin-top:9%;	
+}
+
+
+ 	#section_5 div.section_block .imgLeft{
+	    -webkit-transform:scale(1);	
+        -moz-transform:scale(1);
+        transform:scale(1);
+		margin-top:5%;
+}
+	
+	
+	.app_icon {
+		padding-left:-15px;
+}
+
+
+
+.app_icon, .app_icon a:link, .app_icon a:active, .app_icon a:visited {
+    opacity:1.0;
+    filter:alpha(opacity=98); /* 針對 IE8 以及更早的版本*/
+    transition: all 0.3s ease-in-out 0s;/*底圖顏色漸變消失*/
+}
+
+
+.app_icon a:hover {
+    opacity:0.85;
+    filter:alpha(opacity=85); /* 針對 IE8 以及更早的版本*/
+    transition: all 0.5s linear 0s; /*底圖顏色漸變出現*/ 
+}
+
+
+
+#section_7 .section_block .page_titles3 span, #section_7 .section_block  .page_titles3 {
+    font-weight:300;
+	margin-bottom:10px;
+}
+
+
+
+
+
+
+
+/* ie */
+.row-fluid div.imgLeft{
+    *float: left;
+    *width: 55%;
+}
+.row-fluid div.wordRight{
+    *float: right;
+    *width: 34%;
+}
+
+#section_1 div.section_block {
+    *margin-top:40px;
+}
+
+#section_1 .section_block .imgLeft{
+    *left:-200px;
+}
+#section_1 .section_block .wordRight{
+    *margin-top:100px;
+}
+
+.features_banner_top { *margin-top:75px;}
+
+.goto{
+    cursor: pointer;
+}
+
+#section_6,#section_5,#section_5{
+    font-size: 25px;
+    text-align: left;
+}
+
+
+
+
+    .row-fluid div.wordLeft{
+        float: left;
+        width: 40%;
+    }
+
+
+
+/* 超級大螢幕 */
+@Media (min-width: 1921px) and (max-width: 2560px) { 
+
+   .row-fluid div.imgLeft{
+        float: left;
+        width: 35%;
+    }
+    .row-fluid div.wordRight{
+        float: right;
+        width: 40%;
+    }
+	
+	
+	.row-fluid div.imgLeft{
+    float: left;
+    width: 40%;
+}
+
+
+#section_1{
+    height:1178px;
+}
+
+
+
+    #section_1 .picBlock1 .pic{
+        width:1322px;
+    }
+
+    #section_1 .picBlock1 .pic img{
+		width:1322px;
+        height:859px;
+        position: relative;
+        top: 440px;
+        left:-35px;
+    }
+
+    #section_1 .picBlock1 .imgBlockTitle{
+        top: 18%;
+        left:39%;
+    }
+
+    #section_1 .picBlock2 div.pic{
+        width:100%;
+    }
+
+    #section_1 .picBlock2 .pic img{
+        transform: scale(1.02);
+		-moz-transform: scale(1.02);
+        -webkit-transform: scale(1.02);
+        height:476px;
+        width:655px;
+        position: relative;
+        top: 100px;
+        left:670px;
+    }
+
+    #section_1 .picBlock2 div.imgBlockTitle{
+        top: 36.7%;
+        left:14%;
+    }
+
+    #section_1 .picBlock3 div.pic{
+        /* 要隱藏時用 width:1181px; */
+    }
+
+    #section_1 .picBlock3 .pic img{
+        transform: scale(1);
+		-moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        height:430px;
+	    width:635px;
+        position: relative;
+        top:90px;
+        left:670px;
+    }
+
+    #section_1 .picBlock3 div.imgBlockTitle{
+        top: 37%;
+        left:14%;
+    }
+
+    #section_1 .imgBlockHalf{
+        width: 50%; 
+        float: left;
+        font-size: 0px;
+        position: relative;
+        height: 99%;
+    }
+	
+	
+	
+	#section_1 .page_title, .page_title span{
+	font-size:70px;
+    font-weight:100;	
+    letter-spacing:-0.02em;
+}
+
+
+
+    #section_1 .page_stitle, .page_stitle span{
+    font-weight:300;	
+    letter-spacing:0.02em;
+	padding-top:10px;
+}
+
+
+
+
+
+    #section_1 .imgBlockTitle{
+
+        position: absolute;
+        width:100%;
+        text-align: left;
+
+    }
+	
+	
+	 #section_1 .picBlock1 div.imgBlockTitle{
+     text-align:center;
+     left:0%;
+    }
+	
+	
+	/*
+	#section_1 .picBlock1 .title_left{
+     text-align: center;
+
+    }
+	*/
+	
+	
+
+
+	
+	
+
+    #section_1 .imgBlockSubTitle{
+
+    }
+
+    #section_1 .imgBlock{
+        position: relative;
+        height: 48%;
+    }
+
+    #section_1 .imgBlock .imgBlockTitle{
+        top:50%  
+    }
+
+    #section_2 .highLineTitle{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #section_2 .highLineActive{
+        background-color: green;
+    }
+	
+	
+	#section_3 .features_banner_top{
+		margin:0px 0px 0px 0px;
+		}
+	
+	
+	#section_3 .page_stitle, #section_4 .page_stitle, #section_5 .page_stitle, #section_6 .page_stitle{
+		margin-bottom:30px;
+    }
+
+	
+	
+	#section_3 .page_txt{
+		margin-bottom:0px;
+    }
+	
+	
+	#section_3 .sub_feature1 .section_block{
+		margin:0px 0 10px 0;
+    }
+	
+	
+	#section_3 .sub_feature2 .section_block{
+		margin:0px 0 10px 0;
+    }
+	
+	
+	#section_3 .carousel-indicators {
+    bottom: 85px;
+	left:45%;
+ }
+	
+	
+	#section_3 .infoItem{
+		padding-top:50px;
+    }
+
+
+
+
+    #section_3 .edgeblock {
+        height: 850px;
+        left: -470px;
+        position: relative;
+        top: -200px;
+    }
+	
+	
+	
+	#section_3 .accessories{
+		text-align:center;
+		font-weight:400;
+		margin-bottom:90px;
+
+}
+	
+	
+
+    #section_4 .section_block{
+        margin-top:200px;
+        margin-bottom:180px;
+
+    }
+	
+	
+	
+	 #section_4 .features_banner_top{
+        margin-top:30px;
+
+    }
+	
+	
+	
+	#section_4 .wordright{
+        margin-top:40px;
+
+    }
+
+
+
+    #section_4 .section_block .page_stitle{
+        line-height:16px;
+
+    }
+
+
+    #section_4 .section_block .number_big{
+        line-height:125px;
+
+    }
+
+    #section_5 .section_block{
+
+
+    }
+
+    #section_3 .pad{
+        transform: scale(0.6);
+        -moz-transform: scale(0.6);
+        -webkit-transform: scale(0.6);
+		margin-left:-125px;
+		margin-top:17%;
+    }
+	
+	
+	/* Intro Section */
+    #section_7 div.section_block{
+        margin:35px 0 40px 0;
+    }
+	
+	
+
+
+}
+
+
+
+
+
+/* 大螢幕 */
+@Media (min-width: 1200px) and (max-width: 1920px) { 
+    .row-fluid div.imgLeft{
+        float: left;
+        width: 35%;
+    }
+    .row-fluid div.wordRight{
+        float: right;
+        width: 40%;
+    }
+	
+
+#section_1{
+    height:865px;
+}
+	
+	
+	#section_1  div.pic img.zoomIn{
+    transform: scale(1.05);
+    moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+}
+
+	
+	#section_1 .page_title, .page_title span{
+	font-size:55px;
+		
+    font-weight:100;	
+    letter-spacing:-0.02em;
+}
+
+
+    #section_1 .page_stitle, .page_stitle span{
+	font-size:21px;
+	
+    font-weight:300;	
+    letter-spacing:-0.00em;
+}
+
+	
+
+    #section_1 .picBlock1 .pic{
+        width:1322px;
+    } 
+
+
+   #section_1 .picBlock1 .pic img{
+	    transform: scale(0.85);
+		-moz-transform: scale(0.85);
+        -webkit-transform: scale(0.85);
+	    width:1322px;
+        height:859px;
+        position: relative;
+        /* top: 315px; */
+		top: 285px;
+        left:-239px;
+    }
+
+    #section_1 .picBlock1 .imgBlockTitle{
+        top: 16.5%;
+        /* left:39%; */
+    }
+
+    #section_1 .picBlock2 div.pic{
+        width:100%;
+    }
+
+    #section_1 .picBlock2 .pic img{
+        transform: scale(0.73);
+		-moz-transform: scale(0.73);
+        -webkit-transform: scale(0.73);
+        height:476px;
+        width:655px;
+        position: relative;
+        top: 10px;
+        left:340px;
+    }
+
+    #section_1 .picBlock2 div.imgBlockTitle{
+        top: 34.8%;
+        /*left:14%;*/
+		left:10%;
+    }
+
+    #section_1 .picBlock3 div.pic{
+        width:1181px;
+    }
+
+    #section_1 .picBlock3 .pic img{
+        transform: scale(0.7);
+		-moz-transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        height:430px;
+	    width:635px;
+        position: relative;
+        top: 0px;
+        left:340px;
+    }
+
+    #section_1 .picBlock3 div.imgBlockTitle{
+        top: 34%;
+        /*left:14%;*/
+		left:10%;
+    }
+
+    #section_1 .imgBlockHalf{
+        width: 50%; 
+        float: left;
+        font-size: 0px;
+        position: relative;
+        height: 100%;
+    }
+
+
+
+
+    #section_1 .imgBlockTitle{
+
+        position: absolute;
+        width:100%;
+        text-align: left;
+
+    }
+	
+	
+	 #section_1 .picBlock1 div.imgBlockTitle{
+     text-align:center;
+     left:0%;
+    }
+	
+	
+	/*
+	#section_1 .picBlock1 .title_left{
+     text-align: center;
+
+    }
+	*/
+	
+	
+	
+	
+
+    #section_1 .imgBlockSubTitle{
+
+    }
+
+    #section_1 .imgBlock{
+        position: relative;
+        height: 46.5%;
+    }
+
+    #section_1 .imgBlock .imgBlockTitle{
+        top:50%  
+    }
+
+    #section_2 .highLineTitle{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #section_2 .highLineActive{
+        background-color: green;
+    }
+	
+	
+	 #section_3 .section_block{
+		 margin-top:200px;
+		 margin-bottom:220px;
+	   
+		}
+		
+		
+		
+	#section_3 .features_banner{
+	    -webkit-transform:scale(0.5);	
+        -moz-transform:scale(0.5);
+        transform:scale(0.5);
+		margin-top:18%;	
+}
+	
+	
+	
+	#section_3 .features_banner_top{
+		margin:0px 0px 0px 0px;
+		}
+		
+		
+	 #section_3 .card {
+	/*  
+    height: 100%;
+    vertical-align: top;
+    width: 100%;
+	*/
+	text-align:center;
+	transform:scale(0.8);
+    -moz-transform: scale(0.8);
+   -webkit-transform: scale(0.8);
+	position:relative;
+	/*left:-2%;*/
+}
+	
+	
+	#section_3 .page_stitle, #section_4 .page_stitle, #section_5 .page_stitle{
+		margin-bottom:30px;
+    }
+	
+	
+	#section_3 .page_txt{
+		margin-bottom:0px;
+    }
+	
+	
+	
+	/* 兩個要設一樣的高度,切換場景才會一樣高 */
+	#section_3 .item {
+    height:800px;
+    }
+	
+	#section_3 .card .content{
+    height:800px;
+    }
+	
+	
+	
+	#section_3 .sub_feature1 .section_block{
+		margin:0px 0 10px 0;
+    }
+	
+	
+	#section_3 .sub_feature2 .section_block{
+		margin:0px 0 10px 0;
+    }
+	
+	
+	#section_3 .infoItem{
+		padding-top:90px;
+    }
+	
+	
+	#section_3 .carousel-indicators {
+    bottom: 105px;
+	left:45%;
+ }
+
+
+    #section_3 .edgeblock {
+        height: 850px;
+        left: -470px;
+        position: relative;
+        top: -200px;
+    }
+	
+	
+	
+		#section_3 .accessories{
+		text-align:center;
+		font-weight:400;
+		margin-bottom:90px;
+
+}
+	
+	
+
+    #section_4 .section_block{
+        margin-top:180px;
+        margin-bottom:150px;
+
+    }
+
+
+
+    #section_4 .section_block .page_stitle{
+        line-height:16px;
+
+    }
+
+
+    #section_4 .section_block .number_big{
+        line-height:125px;
+
+    }
+
+    #section_5 .section_block{
+
+
+    }
+
+    #section_3 .pad{
+        transform: scale(0.6);
+        -moz-transform: scale(0.6);
+        -webkit-transform: scale(0.6);
+		margin-left:-125px;
+		margin-top:17%;
+    }
+	
+	
+	
+	/* Intro Section */
+    #section_7 div.section_block{
+        margin:35px 0 40px 0;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+/* 一般pc小螢幕 */
+@Media (min-width: 980px) and (max-width: 1199px) { 
+    .row-fluid div.imgLeft{
+        float: left;
+        width: 35%;
+    }
+    .row-fluid div.wordRight{
+        float: right;
+        width: 40%;
+    }
+	
+	
+	
+	#section_1{
+    height:865px;
+}
+	
+	#section_1  div.pic img.zoomIn{
+    transform: scale(0.85);
+    moz-transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+}
+
+    #section_1 .picBlock1 .pic{
+        width:2070px;
+    }
+
+/*
+    #section_1 .picBlock1 .pic img{
+		transform: scale(0.7);
+		-moz-transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+		width:1322px;
+        height:859px;
+        position: relative;
+        top: 228px;
+		left:-385px;
+    }
+*/
+
+
+    #section_1 .picBlock1 .pic img{
+		transform: scale(0.7);
+		-moz-transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+		width:1322px;
+        height:859px;
+        position: relative;
+        top: 20%;
+		left:-385px;
+    }	
+
+
+    #section_1 .picBlock1 .imgBlockTitle{
+		transform: scale(0.8);
+		-moz-transform: scale(0.8);
+       -webkit-transform: scale(0.8);
+        top: 15%;
+        left:25%;
+    }
+
+    #section_1 .picBlock2 div.pic{
+        width:636px;
+    }
+	
+/*
+    #section_1 .picBlock2 .pic img{
+		transform: scale(0.65);
+		-moz-transform: scale(0.65);
+        -webkit-transform: scale(0.65);
+        height:476px;
+        width:655px;
+        position: relative;
+        top: 105px;
+        left:-3%;
+    }
+	*/
+	
+	
+	    #section_1 .picBlock2 .pic img{
+		transform: scale(0.5);
+		-moz-transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+        height:476px;
+        width:655px;
+        position: relative;
+        top: 65px;
+        left:-3%;
+    }
+	
+
+    #section_1 .picBlock2 div.imgBlockTitle{
+		transform: scale(0.8);
+		-moz-transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+		text-align:center;
+        top: 10%;
+        left:2%;
+    }
+
+    #section_1 .picBlock3 div.pic{
+        width:1181px; 
+    }
+
+/*
+    #section_1 .picBlock3 .pic img{
+		transform: scale(0.6);
+		-moz-transform: scale(0.6);
+        -webkit-transform: scale(0.6);
+        height:430px;
+	    width:635px;
+        position: relative;
+        top: 107px;
+        left:-3%;
+    }
+*/
+
+
+    #section_1 .picBlock3 .pic img{
+		transform: scale(0.45);
+		-moz-transform: scale(0.45);
+        -webkit-transform: scale(0.45);
+        height:430px;
+	    width:635px;
+        position: relative;
+        top: 60px;
+        left:-3%;
+    }
+		
+
+    #section_1 .picBlock3 div.imgBlockTitle{
+		transform: scale(0.8);
+		-moz-transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+		text-align:center;
+        top: 10%;
+        left:2%;
+    }
+
+    #section_1 .imgBlockHalf{
+        width: 50%; 
+        float: left;
+        font-size: 0px;
+        position: relative;
+        height: 100%;
+    }
+
+    #section_1 .imgBlockTitle{
+
+        position: absolute;
+        width:100%;
+        text-align: left;
+
+    }
+	
+	
+
+
+    #section_1 div.TitleHoverColor{
+        color:#dedede;
+    }
+
+    #section_1 .imgBlockSubTitle{
+
+    }
+
+    #section_1 .imgBlock{
+        position: relative;
+        height: 50%;
+    }
+	
+	
+	#section_1 .imgBlockHalf .picBlock3{
+		margin-top:-5.5%;
+    }
+
+    #section_1 .imgBlock .imgBlockTitle{
+        top:50%  
+    }
+
+    #section_2 .highLineTitle{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #section_2 .highLineActive{
+        background-color: green;
+    }
+	
+	
+   #section_3 .section_block{
+
+		}
+	
+	
+	
+	#section_3 .features_banner{
+	    -webkit-transform:scale(0.45);	
+        -moz-transform:scale(0.45);
+        transform:scale(0.45);
+		margin-top: 45%;
+		margin-left:-10%;
+}
+		
+		
+  #section_3 .card {
+	/*  
+    height: 100%;
+    vertical-align: top;
+    width: 100%;
+	*/
+	text-align:center;
+	transform:scale(0.75);
+	-moz-transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+	position:relative;
+	left:-5%;
+}
+	
+	
+	#section_3 .page_stitle, #section_4 .page_stitle, #section_5 .page_stitle{
+		margin-bottom:30px;
+    }
+	
+	
+	#section_3 .page_txt{
+		margin-bottom:0px;
+    }
+	
+	
+	
+	/* 兩個要設一樣的高度,切換場景才會一樣高 */
+	#section_3 .item {
+    height:750px;
+    }
+	
+	#section_3 .card .content{
+    height:750px;
+    }
+	
+	
+	#section_3 .sub_feature1 .section_block{
+		margin:0px 0 -50px 0;
+    }
+	
+	
+	#section_3 .sub_feature2 .section_block{
+		margin:0px 0 -50px 0;
+    }
+	
+	
+	#section_3 .carousel-indicators {
+    bottom: 120px;
+	left:45%;
+ }
+	
+	
+	#section_3 .infoItem{
+		padding-top:90px;
+    }
+	
+	
+	
+	#section_3 .cardname{
+	
+    }
+	
+	
+	
+	#section_3 .accessories{
+		text-align:center;
+		font-weight:400;
+		margin-bottom:90px;
+
+}
+
+
+    #section_3 .pad{
+        transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+		margin-left:-30%;
+		margin-top:78%;
+    }
+	
+	
+	
+
+    #section_4 .section_block .page_stitle2{
+        line-height:15px;
+
+    }
+
+
+    #section_4 .section_block{
+        margin-top:200px;
+        margin-bottom:120px;
+
+    }
+	
+	
+	#section_4 .wordright{
+        margin-top:40px;
+
+    }
+	
+	
+	
+	#section_5 .section_block{
+ }
+ 
+ 
+ 	#section_5 div.section_block .imgLeft{
+	    -webkit-transform:scale(0.9);	
+        -moz-transform:scale(0.9);
+        transform:scale(0.9);
+		margin-left:-10%;
+		margin-top:12%;
+}
+
+
+
+    #section_5 .section_block .wordRight{
+
+    }
+	
+	
+	
+	#section_5 .download_app {
+    width: 120%;
+    }
+
+	/* Intro Section */
+    #section_7 div.section_block{
+    margin:35px 0 40px 0;
+    }
+	
+	/* 按鈕 */
+	#section_7 .Button_lineW {
+     font-size:14pt;
+	 padding:15px 15px 17px 15px;
+}
+
+
+/* solution Icon */
+#section_7 .section_block .solution_icon{
+	-webkit-transform:scale(1);	
+    -moz-transform:scale(1);
+    transform:scale(1);
+	margin-top: 3%;
+	margin-left:0%;
+}
+
+
+}
+
+
+
+
+
+
+/* 平板電腦、橫向手機和一般桌機解析度 */
+@Media (min-width: 768px) and (max-width: 979px) { 
+    .row-fluid div.imgLeft{
+        float: left;
+        width:100%;
+    }
+
+    .row-fluid div.wordRight{
+        float: right;
+        width:100%;
+        margin-bottom:50px;
+    }
+
+	#section_1  div.pic img.zoomIn{
+    transform: scale(0.75);
+    moz-transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+}
+
+    #section_1 .picBlock1 .pic{
+        width:2070px;
+    }
+
+    #section_1 .picBlock1 .pic img{
+		transform: scale(0.7);
+		-moz-transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+		width:1322px;
+        height:859px;
+        position: relative;
+        top: 480px;
+		left:-190px;
+    }
+
+    #section_1 .picBlock1 .imgBlockTitle{
+		transform: scale(0.8);
+		-moz-transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        top: 27%;
+        left:25%;
+    }
+
+    #section_1 .picBlock2 div.pic{
+        width:636px;
+    }
+
+    #section_1 .picBlock2 .pic img{
+		transform: scale(0.6);
+		-moz-transform: scale(0.6);
+        -webkit-transform: scale(0.6);
+        height:476px;
+        width:655px;
+        position: relative;
+        top: 280px;
+        left:-9%;
+    }
+
+    #section_1 .picBlock2 div.imgBlockTitle{
+		transform: scale(0.8);
+		-moz-transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+		text-align:center;
+        top: 30%;
+        left:2%;
+    }
+
+    #section_1 .picBlock3 div.pic{
+        width:1181px; 
+    }
+
+    #section_1 .picBlock3 .pic img{
+		transform: scale(0.6);
+		-moz-transform: scale(0.6);
+        -webkit-transform: scale(0.6);
+        height:430px;
+	    width:635px;
+        position: relative;
+        top: 170px;
+        left:-18%;
+    }
+
+    #section_1 .picBlock3 div.imgBlockTitle{
+		transform: scale(0.8);
+		-moz-transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+		text-align:center;
+        top: 13%;
+        left:2%;
+    }
+
+    #section_1 .imgBlockHalf{
+        width: 50%; 
+        float: left;
+        font-size: 0px;
+        position: relative;
+        height: 100%;
+    }
+
+    #section_1 .imgBlockTitle{
+
+        position: absolute;
+        width:100%;
+        text-align: left;
+
+    }
+	
+	
+
+
+    #section_1 div.TitleHoverColor{
+        color:#dedede;
+    }
+
+    #section_1 .imgBlockSubTitle{
+
+    }
+
+    #section_1 .imgBlock{
+        position: relative;
+        height: 55%;
+    }
+
+    #section_1 .imgBlock .imgBlockTitle{
+        top:50%  
+    }
+
+    #section_2 .highLineTitle{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #section_2 .highLineActive{
+        background-color: green;
+    }
+	
+	
+  #section_3 .section_block{
+	  margin-top:130px;
+	  margin-bottom:500px;
+}
+
+
+#section_3 .features_banner {
+    transform: scale(0.6);
+	margin-left:16%;
+}
+	
+	
+
+		
+		
+	#section_3 .arrow_big2{
+		transform:scale(1.3);
+		-moz-transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+		}
+		
+		
+  #section_3 .card {
+	/*  
+    height: 100%;
+    vertical-align: top;
+    width: 100%;
+	*/
+	text-align:center;
+	transform:scale(0.75);
+	-moz-transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+	position:relative;
+	left:-5%;
+}
+	
+	
+	#section_3 .page_stitle, #section_4 .page_stitle, #section_5 .page_stitle{
+		margin-bottom:30px;
+    }
+	
+	
+	#section_3 .page_txt{
+		margin-bottom:0px;
+    }
+	
+	
+	/* 兩個要設一樣的高度,切換場景才會一樣高 */
+	#section_3 .item {
+    height:600px;
+    }
+	
+	#section_3 .card .content{
+    height:600px;
+    }
+	
+	
+	#section_3 .sub_feature1 .section_block{
+		margin:0px 0 -130px 0;
+    }
+	
+	
+	#section_3 .sub_feature2 .section_block{
+		margin:0px 0 -130px 0;
+    }
+	
+	
+	#section_3 .carousel-indicators {
+    bottom: 80px;
+	left:45%;
+ }
+	
+	
+	#section_3 .infoItem{
+		padding-top:100px;
+    }
+	
+	
+	#section_3 .inforow{
+		padding-bottom:70px;
+    }
+	
+	
+	
+	
+	#section_3 .cardname{
+	
+    }
+	
+	
+	
+	#section_3 .pad{
+        transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+		margin-left:-11%;
+    }
+	
+
+    #section_4 .section_block{
+        margin-top:120px;
+        margin-bottom:590px;
+
+    }
+
+
+    #section_4 .section_block .page_stitle{
+        line-height:16px;
+
+    }
+
+
+    #section_4 .section_block .number_big{
+        line-height:125px;
+
+    }
+	
+	
+	#section_4 .section_block .wordLeft{
+        width:100%;
+        margin-left:-10px;
+		text-align:left;
+
+    }
+
+
+    #section_4 .section_block .wordright{
+        width:100%;
+        margin-left:-15%;
+
+    }
+	
+	
+	#section_5 .section_block{
+		 margin-top:130px;
+		 margin-bottom:510px;
+    }
+	
+	
+	#section_5 div.section_block .imgLeft {
+    margin-left: 10%;
+    margin-top: 5%;
+    -webkit-transform:scale(1);	
+    -moz-transform:scale(1);
+    transform:scale(1);
+}
+	
+	
+	#section_5 .section_block .wordRight{
+        width:100%;
+		position:relative;
+		text-align:left;
+    }
+	
+	
+		#section_6 .section_block{
+		 margin-top:110px;
+    }
+	
+	
+	/* Intro Section */
+    #section_7 div.section_block{
+    margin:80px 0 100px 0;
+	text-align:center;
+    }
+	
+	
+	/* Intro Section--word block */
+    #section_7 div.section_block .wordblock{
+		width:100%;
+    }
+	
+	
+	/* Intro Section--word button */
+    #section_7 div.section_block .wordbutton{
+		width:77%;
+    }
+	
+	
+	/* 按鈕 */
+	#section_7 .Button_lineW {
+     font-size:14pt;
+	 padding:15px 15px 17px 15px;
+	 width: 50%;
+}
+	
+
+#section_7 .section_block .page_titles3 span, #section_7 .section_block  .page_titles3 {
+	font-weight:100;
+    font-size: 60px;
+    line-height: 75px;
+	margin-bottom:30px;
+}	
+
+
+/* solution Icon */
+#section_7 .section_block .solution_icon{
+	-webkit-transform:scale(1.5);	
+    -moz-transform:scale(1.5);
+    transform:scale(1.5);
+	margin-top: 10%;
+	margin-bottom: 5%;
+	margin-left:42%;
+}
+
+
+
+
+}
+
+/* 橫向智慧手機到竪立平板電腦解析度 */
+@Media (max-width: 767px) { 
+    .row-fluid div.imgLeft{
+        float: left;
+        width:100%;
+    }
+    .row-fluid div.wordRight{
+        float: right;
+        width:100%;
+        margin-bottom:40px;
+    }
+
+    .phoneTitle{
+        color:#fff; 
+        font-size: 50px; 
+        position: relative;
+        z-index: 9999; 
+        padding: 10px; 
+    }
+
+    #section_1 .picBlock1 .pic{
+        width:2070px;
+    }
+
+    #section_1 .picBlock1 .pic img{
+		width:1322px;
+        height:859px;
+        position: relative;
+        top: 500px;
+    }
+
+    #section_1 .picBlock1 .imgBlockTitle{
+        top: 27%;
+        left:25%;
+    }
+	
+	
+
+    #section_1 .picBlock2 div.pic{
+        width:636px;
+    }
+
+    #section_1 .picBlock2 .pic img{
+        height:476px;
+        width:655px;
+        position: relative;
+        top: 200px;
+        left:250px;
+    }
+
+    #section_1 .picBlock2 div.imgBlockTitle{
+        top: 48%;
+        left:2%;
+    }
+
+    #section_1 .picBlock3 div.pic{
+       width:1181px;
+    }
+
+    #section_1 .picBlock3 .pic img{
+        height:430px;
+	    width:635px;
+
+        position: relative;
+        top: 100px;
+        left:-600px;
+    }
+
+    #section_1 .picBlock3 div.imgBlockTitle{
+        top: 35%;
+        left:53%;
+    }
+
+    #section_1 .imgBlockHalf{
+        width: 50%; 
+        float: left;
+        font-size: 0px;
+        position: relative;
+        height: 100%;
+    }
+
+    #section_1 .imgBlockTitle{
+
+        position: absolute;
+        width:100%;
+        text-align: left;
+
+    }
+
+    #section_1 div.TitleHoverColor{
+        color:#dedede;
+    }
+
+    #section_1 .imgBlockSubTitle{
+
+    }
+
+    #section_1 .imgBlock{
+        position: relative;
+        height: 55%;
+    }
+
+    #section_1 .imgBlock .imgBlockTitle{
+        top:50%  
+    }
+
+    #section_2 .highLineTitle{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #section_2 .highLineActive{
+        background-color: green;
+    }
+	
+	
+	
+  #section_3 .section_block{
+	  margin-top:110px;
+	  margin-bottom:370px;
+}
+
+
+#section_3 .features_banner {
+    transform: scale(0.45);
+	margin-left:11%;
+	margin-top:15%;
+}
+	
+	
+	
+   #section_3 .features_banner_top{
+		margin:0px 0px 0px 0px;
+		}
+		
+		
+		
+	#section_3 .arrow_big2{
+		transform:scale(1.8);
+		-moz-transform: scale(1.8);
+        -webkit-transform: scale(1.8);
+		}
+		
+		
+  #section_3 .card {
+	/*  
+    height: 100%;
+    vertical-align: top;
+    width: 100%;
+	*/
+	text-align:center;
+	transform:scale(0.75);
+	-moz-transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+	position:relative;
+	left:-5%;
+}
+	
+	
+	#section_3 .page_stitle, #section_4 .page_stitle, #section_5 .page_stitle{
+		margin-bottom:30px;
+    }
+	
+	
+	#section_3 .page_txt{
+		margin-bottom:0px;
+    }
+	
+	
+	/* 兩個要設一樣的高度,切換場景才會一樣高 */
+	#section_3 .item {
+    height:500px;
+    }
+	
+	#section_3 .card .content{
+    height:500px;
+    }
+	
+	
+	#section_3 .sub_feature1 .section_block{
+		margin:0px 0 -130px 0;
+    }
+	
+	
+	#section_3 .sub_feature2 .section_block{
+		margin:0px 0 -130px 0;
+    }
+	
+	
+	#section_3 .carousel-indicators {
+    bottom: 60px;
+	left:40%;
+ }
+	
+	
+	#section_3 .infoItem{
+		padding-top:80px;
+    }
+	
+	
+	#section_3 .inforow{
+		padding-bottom:40px;
+    }
+	
+	
+	
+	
+	#section_3 .cardname{
+		
+    }
+	
+	
+	
+	    #section_3 .pad{
+        transform: scale(0.4);
+        -moz-transform: scale(0.4);
+        -webkit-transform: scale(0.4);
+		margin-left:-18%;
+    }
+	
+	
+	
+
+    #section_4 .section_block{
+        margin-top:80px;
+        margin-bottom:500px;
+
+    }
+
+
+    #section_4 .section_block .page_stitle{
+        line-height:16px;
+
+    }
+
+
+    #section_4 .section_block .number_big{
+        line-height:125px;
+
+    }
+
+
+    #section_4 .section_block .wordLeft{
+        width:100%;
+        margin-left:-1px;
+		text-align:left;
+
+    }
+	
+	
+	
+	#section_4 .section_block .wordright{
+        width:100%;
+		margin-left:2%;
+		float:left;
+		transform:scale(0.75);
+		-moz-transform: scale(0.75);
+        -webkit-transform: scale(0.75);
+    }
+	
+	
+	#section_5 .section_block{
+		 margin-top:120px;
+		 margin-bottom:10px;
+
+    }
+	
+	
+	#section_5 .section_block .wordRight{
+        width:100%;
+		position:relative;
+		text-align:left;
+    }
+	
+/*	
+#section_5 .section_block .row-fluid div.imgLeft {
+transform: scale(0.8);
+-moz-transform: scale(0.8);
+-webkit-transform: scale(0.8);
+}
+*/
+
+
+/* 給手機瀏覽用 */
+#section_5 .section_block .row-fluid div.imgLeft img {
+transform: scale(1);
+-moz-transform: scale(1);
+-webkit-transform: scale(1);
+}
+
+
+
+    #section_6 div.section_block{
+		margin-top:100px;
+    }
+
+	
+	
+	/* Intro Section */
+    #section_7 div.section_block{
+    margin:80px 0 75px 0;
+	text-align:center;
+    }
+	
+	
+#section_7 .section_block .page_titles3 span, #section_7 .section_block  .page_titles3 {
+	font-weight:100;
+    font-size: 48px;
+    line-height: 58px;
+	margin-bottom:30px;
+}	
+
+
+/* solution Icon */
+#section_7 .section_block .solution_icon{
+	margin-top: 5%;
+	margin-bottom:5%;
+}
+
+
+
+}
+
+
+
+
+
+/* iPhone 6 & 6 plus > 4.7吋--手機及其他更小解析度 */
+@Media (min-width: 373px) and (max-width: 414px) { 
+    .row-fluid div.imgLeft{
+        float: left;
+        width:100%;
+    }
+    .row-fluid div.wordRight{
+        float: right;
+        width:100%;
+        margin-bottom:40px;
+    }
+
+    .phoneTitle{
+        color:#fff; 
+        font-size: 50px; 
+        position: relative;
+        z-index: 9999; 
+        padding: 10px; 
+    }
+
+    #section_1 .picBlock1 .pic{
+        width:2070px;
+    }
+
+    #section_1 .picBlock1 .pic img{
+		width:1322px;
+        height:859px;
+        position: relative;
+        top: 500px;
+    }
+
+    #section_1 .picBlock1 .imgBlockTitle{
+        top: 27%;
+        left:25%;
+    }
+
+    #section_1 .picBlock2 div.pic{
+        width:100%;
+    }
+
+    #section_1 .picBlock2 .pic img{
+        height:476px;
+        width:655px;
+        position: relative;
+        top: 200px;
+        left:250px;
+    }
+
+    #section_1 .picBlock2 div.imgBlockTitle{
+        top: 48%;
+        left:2%;
+    }
+
+    #section_1 .picBlock3 div.pic{
+       width:1181px;
+    }
+
+    #section_1 .picBlock3 .pic img{
+        height:430px;
+	    width:635px;
+
+        position: relative;
+        top: 100px;
+        left:-600px;
+    }
+
+    #section_1 .picBlock3 div.imgBlockTitle{
+        top: 35%;
+        left:53%;
+    }
+
+    #section_1 .imgBlockHalf{
+        width: 50%; 
+        float: left;
+        font-size: 0px;
+        position: relative;
+        height: 100%;
+    }
+
+    #section_1 .imgBlockTitle{
+
+        position: absolute;
+        width:100%;
+        text-align: left;
+
+    }
+
+    #section_1 div.TitleHoverColor{
+        color:#dedede;
+    }
+
+    #section_1 .imgBlockSubTitle{
+
+    }
+
+    #section_1 .imgBlock{
+        position: relative;
+        height: 55%;
+    }
+
+    #section_1 .imgBlock .imgBlockTitle{
+        top:50%  
+    }
+
+    #section_2 .highLineTitle{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #section_2 .highLineActive{
+        background-color: green;
+    }
+
+		 #section_3 .section_block{
+	 
+		}
+		
+		
+	#section_3 .features_banner {
+    transform: scale(0.3);
+	margin-left:11%;
+	margin-top:15%;
+}
+	
+	
+	
+   #section_3 .features_banner_top{
+		margin:0px 0px 0px 0px;
+		}
+		
+		
+	#section_3 .arrow_big2{
+		transform:scale(1.3);
+		-moz-transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+		}	
+		
+		
+  #section_3 .card {
+	/*  
+    height: 100%;
+    vertical-align: top;
+    width: 100%;
+	*/
+	text-align:center;
+	transform:scale(0.75);
+	-moz-transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+	position:relative;
+	left:-5%;
+}
+	
+	
+	#section_3 .page_stitle, #section_4 .page_stitle, #section_5 .page_stitle{
+		margin-bottom:30px;
+    }
+	
+	
+	#section_3 .page_txt{
+		margin-bottom:0px;
+    }
+	
+	
+	/* 兩個要設一樣的高度,切換場景才會一樣高 */
+	#section_3 .item {
+    height:500px;
+    }
+	
+	#section_3 .card .content{
+    height:500px;
+    }
+	
+	
+	#section_3 .sub_feature1 .section_block{
+		margin:0px 0 -130px 0;
+    }
+	
+	
+	#section_3 .sub_feature2 .section_block{
+		margin:0px 0 -130px 0;
+    }
+	
+	
+	#section_3 .carousel-indicators {
+    bottom: 60px;
+	left:40%;
+ }
+	
+	
+	#section_3 .infoItem{
+		padding-top:80px;
+    }
+	
+	
+	#section_3 .inforow{
+		padding-bottom:40px;
+    }
+	
+	
+	
+	
+	#section_3 .cardname{
+	text-align:center;
+	transform:scale(0.65);
+	-moz-transform: scale(0.65);
+    -webkit-transform: scale(0.65);
+	
+	width:145%;
+	margin-left:-23%;
+    }
+	
+	
+	#section_3 div.section_block{
+    margin-bottom: 330px;
+    margin-top: 80px;
+    }
+	
+	
+	
+
+    #section_4 .section_block{
+        margin-top:80px;
+        margin-bottom:550px;
+
+    }
+
+
+    #section_4 .section_block .page_stitle{
+        line-height:16px;
+
+    }
+
+
+    #section_4 .section_block .number_big{
+        line-height:125px;
+
+    }
+
+
+    #section_4 .section_block .wordLeft{
+        width:100%;
+        margin-left:-10px;
+		text-align:left;
+
+    }
+	
+	
+	
+	#section_4 .section_block .wordright{
+        width:100%;
+		margin-left:8%;
+		float:left;
+		transform:scale(0.75);
+		-moz-transform: scale(0.75);
+        -webkit-transform: scale(0.75);
+    }
+	
+	
+	#section_5 .section_block{
+		 margin-top:100px;
+		 margin-bottom:400px;
+
+    }
+	
+	
+	#section_5 .section_block .wordRight{
+        width:100%;
+		position:relative;
+		text-align:left;
+    }
+	
+/*	
+#section_5 .section_block .row-fluid div.imgLeft {
+transform: scale(0.8);
+-moz-transform: scale(0.8);
+-webkit-transform: scale(0.8);
+
+margin-left:-15%;
+}
+*/
+
+
+/* 給手機瀏覽用 */
+#section_5 .section_block .row-fluid div.imgLeft img {
+transform: scale(0.8);
+-moz-transform: scale(0.8);
+-webkit-transform: scale(0.8);
+}
+
+
+    #section_6 div.section_block{
+		margin-top:45px;
+    }
+
+    #section_3 .pad{
+        transform: scale(0.4);
+        -moz-transform: scale(0.4);
+        -webkit-transform: scale(0.4);
+		margin-left:-15%;
+    }
+	
+	
+		#section_7 div.section_block{
+		margin-top:50px;
+    }
+	
+	
+	
+	/* 按鈕 */
+	#section_7 .Button_lineW {
+     font-size:12pt;
+	 font-weight:300;
+	 padding:15px 15px 17px 15px;
+}
+
+
+
+#section_7 .section_block .page_titles3 span, #section_7 .section_block  .page_titles3 {
+	font-weight:100;
+    font-size: 48px;
+    line-height: 58px;
+	margin-bottom:30px;
+}	
+
+
+/* solution Icon */
+#section_7 .section_block .solution_icon{
+	margin-top: 5%;
+	margin-bottom:7%;
+}
+
+
+}
+
+
+
+
+
+/* 橫向智慧手機及其他更小解析度 */
+@Media (max-width: 480px) { 
+    .row-fluid div.imgLeft{
+        float: left;
+        width:100%;
+    }
+
+    .row-fluid div.wordRight{
+        float: right;
+        width:100%;
+        margin-bottom:10px;
+    }
+
+    #section_1 .imgBlock{
+        width: 33.333%; 
+        float: left;
+        font-size: 0px;
+        position: relative;
+    }
+
+    #section_1 .imgBlockTitle{
+        font-size: 30px;
+        position: absolute;
+        width:100%;
+        text-align: center;top: 40%;
+        color:white;
+    }
+
+    #section_1 .imgBlockSubTitle{
+        font-size: 15px;
+    }
+
+    #section_2 .highLineTitle{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #section_2 .highLineActive{
+        background-color: green;
+    }
+
+		
+		
+	#section_3 .features_banner {
+    transform: scale(0.3);
+	margin-left:11%;
+	margin-top:15%;
+}
+	
+	
+	
+   #section_3 .features_banner_top{
+		margin:0px 0px 0px 0px;
+		}
+		
+		
+	#section_3 .arrow_big2{
+		transform:scale(2.3);
+		-moz-transform: scale(2.3);
+        -webkit-transform: scale(2.3);
+		}		
+		
+		
+  #section_3 .card {
+	/*  
+    height: 100%;
+    vertical-align: top;
+    width: 100%;
+	*/
+	text-align:center;
+	transform:scale(0.75);
+	-moz-transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+	position:relative;
+	left:-5%;
+}
+	
+	
+	#section_3 .page_stitle, #section_4 .page_stitle, #section_5 .page_stitle{
+		margin-bottom:30px;
+    }
+	
+	
+	#section_3 .page_txt{
+		font-size:18px;
+		margin-bottom:0px;
+    }
+	
+	
+	/* 兩個要設一樣的高度,切換場景才會一樣高 */
+	#section_3 .item {
+    height:420px;
+    }
+	
+	#section_3 .card .content{
+    height:420px;
+    }
+	
+	
+	#section_3 .sub_feature1 .section_block{
+		margin:0px 0 -130px 0;
+    }
+	
+	
+	#section_3 .sub_feature2 .section_block{
+		margin:0px 0 -130px 0;
+    }
+	
+	
+	#section_3 .carousel-indicators {
+    bottom: 110px;
+	left:40%;
+ }
+	
+	
+	#section_3 .infoItem{
+		padding-top:0px;
+    }
+	
+	
+	#section_3 .inforow{
+		padding-bottom:40px;
+    }
+	
+	
+	
+	
+	#section_3 .cardname{
+	text-align:center;
+	transform:scale(0.65);
+	-moz-transform: scale(0.65);
+    -webkit-transform: scale(0.65);
+	
+	width:145%;
+	margin-left:-23%;
+    }
+	
+	
+	
+	#section_3 div.section_block{
+    margin-bottom: 300px;
+    margin-top: 60px;
+    }
+	
+	
+	
+
+    #section_4 .section_block{
+        margin-top:60px;
+        margin-bottom:455px;
+
+    }
+	
+	
+	
+		#section_4 .page_txt{
+		font-size:18px;
+		margin-bottom:60px;
+    }
+
+
+    #section_4 .section_block .page_stitle{
+		line-height:35px;
+
+    }
+
+
+    #section_4 .section_block .number_big{
+        line-height:125px;
+
+    }
+
+
+    #section_4 .section_block .wordLeft{
+        width:100%;
+        margin-left:-1px;
+		text-align:left;
+
+    }
+	
+	
+	
+	#section_4 .section_block .wordright{
+        width:100%;
+		margin-left:17%;
+		float:left;
+		transform:scale(0.65);
+		-moz-transform: scale(0.65);
+        -webkit-transform: scale(0.65);
+    }
+	
+	#section_4 .animationImg{
+		width:100%;
+		height:100%;
+		}
+	
+	
+	#section_5 .section_block{
+		 margin-top:50px;
+		 margin-bottom:30px;
+
+    }
+	
+	
+	#section_5 .section_block .wordRight{
+        width:100%;
+		position:relative;
+		text-align:left;
+    }
+	
+/*	
+#section_5 .section_block .row-fluid div.imgLeft {
+transform: scale(0.6);
+-moz-transform: scale(0.6);
+-webkit-transform: scale(0.6);
+
+margin-left:-16%;
+}
+*/
+
+
+/* 給手機瀏覽用 */
+#section_5 .section_block .row-fluid div.imgLeft img {
+transform: scale(0.8);
+-moz-transform: scale(0.8);
+-webkit-transform: scale(0.8);
+
+}
+
+
+    #section_6 div.section_block{
+		margin-top:10px;
+		margin-bottom:35px;
+    }
+
+
+    #section_3 .pad{
+        transform: scale(0.25);
+        -moz-transform: scale(0.25);
+        -webkit-transform: scale(0.25);
+		margin-left:-34%;
+    }
+	
+	
+	
+	#section_7 div.section_block{
+		margin-top:30px;
+    }
+	
+	
+	/* 按鈕 */
+	#section_7 .Button_lineW {
+     font-size:12pt;
+	 font-weight:300;
+	 padding:15px 15px 17px 15px;
+}
+
+
+
+#section_7 .section_block .page_titles3 span, #section_7 .section_block  .page_titles3 {
+	font-weight:100;
+    font-size: 48px;
+    line-height: 58px;
+	margin-bottom:30px;
+}	
+
+
+/* solution Icon */
+#section_7 .section_block .solution_icon{
+	margin-top: 5%;
+	margin-bottom:7%;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+/*翻轉樣式 http://jsfiddle.net/Tinclon/2ega7yLt/7/    http://desandro.github.io/3dtransforms/examples/card-01.html   http://css3playground.com/3d-flip-cards/*/
+
+.card {
+    height: 100%;
+    vertical-align: top;
+    width: 100%;
+}
+
+.card .content {
+    transition: 1s ease-out;
+    -webkit-transition: 1.2s ease-in-out;
+    -moz-transition: 1.2s ease-in-out;
+    -o-transition: 1.2s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+
+    /* content backface is visible so that static content still appears */
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+    -moz-backface-visibility: visible;
+    -o-backface-visibility: visible;
+    -ms-backface-visibility: visible;
+
+
+    /*border: 1px solid grey;*/
+    position:relative;
+    width: 100%;
+    height: 100%;
+
+}
+.card.applyflip .content {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+}
+
+
+.card .content .cardStatic {
+    /* Half way through the card flip, rotate static content to 0 degrees */
+    transition: 0s ease-in-out 0s;
+    -webkit-transition: 0s ease-in-out 0s;
+    -moz-transition: 0s ease-in-out 0s;
+    -o-transition: 0s ease-in-out 0s;
+    -ms-transition: 0s ease-in-out 0s;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    height: 0;
+    width: 100%;
+    line-height:100px;
+}
+
+.card.applyflip .content .cardStatic {
+    /* Half way through the card flip, rotate static content to -180 degrees -- to negate the flip and unmirror the static content */
+    transition: 0s ease-out 0s;
+    -webkit-transition: 0s ease-in-out 0s;
+    -moz-transition: 0s ease-in-out 0s;
+    -o-transition: 0s ease-in-out 0s;
+    -ms-transition: 0s ease-in-out 0s;
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+}
+
+.card .content .cardFront {
+    /*background-color: skyblue;*/
+    color: tomato;
+}
+
+.card .content .cardBack {
+    /*background-color: tomato;*/
+    color: skyblue;
+}
+
+.card .content .cardFront, .card .content .cardBack {
+    /* Backface visibility works great for all but IE. As such, we mark the backface visible in IE and manage visibility ourselves */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height:200px;
+}
+.card .content .cardFront, .card.applyflip .content .cardFront {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+}
+
+.card .content .cardBack, .card.applyflip .content .cardBack {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+}
+
+.card .content .cardFront, .card.applyflip .content .cardBack {
+    /* IE Hack. Halfway through the card flip, set visibility. Keep other browsers visible throughout the card flip. */
+    animation: stayvisible 0.5s both;
+    -webkit-animation: stayvisible 0.5s both;
+    -moz-animation: stayvisible 0.5s both;
+    -o-animation: stayvisible 0.5s both;
+    -ms-animation: donothing 0.5s;
+    -ms-transition: visibility 0s ease-out 0.17s;
+    visibility: visible;
+}
+.card.applyflip .content .cardFront, .card .content .cardBack {
+    /* IE Hack. Halfway through the card flip, set visibility. Keep other browsers visible throughout the card flip. */
+    animation: stayvisible 0.5s both;
+    -webkit-animation: stayvisible 0.5s both;
+    -moz-animation: stayvisible 0.5s both;
+    -o-animation: stayvisible 0.5s both;
+    -ms-animation: donothing 0.5s;
+    -ms-transition: visibility 0s ease-out 0.17s;
+    visibility: hidden;
+}
+@keyframes stayvisible { from { visibility: visible; } to { visibility: visible; } }
+@-webkit-keyframes stayvisible { from { visibility: visible; } to { visibility: visible; } }
+@-moz-keyframes stayvisible { from { visibility: visible; } to { visibility: visible; } }
+@-o-keyframes stayvisible { from { visibility: visible; } to { visibility: visible; } }
+@-ms-keyframes donothing { 0% { } 100% { } }
+
+
+@-webkit-keyframes flip {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+        transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+        transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) scale3d(.95, .95, .95);
+        transform: perspective(400px) scale3d(.95, .95, .95);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes flip {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+        transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+        transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) scale3d(.95, .95, .95);
+        transform: perspective(400px) scale3d(.95, .95, .95);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+}
+
+.animated.flip {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    -webkit-animation-name: flip;
+    animation-name: flip;
+}

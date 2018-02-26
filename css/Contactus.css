@@ -1,0 +1,145 @@
+
+
+
+
+/* 崁入表格區塊整體設定--寬度、字體 */
+#section_1 .section_block #mc_embed_signup {
+    font-size: 14px;
+	font-family: "Roboto", "Segoe UI", "Segoe UI Light", "Myriad Set Pro", "NotoSansHant", Microsoft JhengHei, "微軟正黑體", Heiti TC, Microsoft YaHei, "微軟雅黑體", simhei, PMingLiU, 新細明體, Meiryo, ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, ＭＳ Ｐゴシック, Malgun Gothic, Dotum, Gulim, Trebuchet MS, Lucida Grande, Verdana, Arial, sans-serif;
+	clear: left;
+    width: 700px;
+	text-align:left;
+	margin-top:0px;
+}
+
+
+
+/* 主標文字定義 */
+#section_1 .section_block #mc_embed_signup h2 {
+    font-family: "Source Sans Pro", "Roboto", Segoe UI, "NotoSansHant", Microsoft JhengHei, "微軟正黑體", Heiti TC, Microsoft YaHei, "微軟雅黑體", simhei, PMingLiU, 新細明體, Meiryo, ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, ＭＳ Ｐゴシック, Malgun Gothic, Dotum, Gulim, Trebuchet MS, Lucida Grande, Verdana, Arial, sans-serif ;
+    font-size:35px;
+    font-weight:200;
+    line-height:45px;
+    letter-spacing:-0.01em;
+    word-spacing:0.01em;
+    margin: 0px 0 20px 0;
+    padding: 0;
+}
+
+
+/* Form 文字定義 */
+#section_1 .section_block label, input, button, select, textarea{
+	font-family: "Roboto", Segoe UI, Helvetica, Arial, sans-serif ;
+	font-size:16px;
+    font-weight:300;
+    line-height:26px;
+
+}
+
+
+/* Form 填選小方框文字位置 */
+#section_1 .section_block .input-group{
+    margin-top: 15px;
+}
+
+
+
+/* Form 填選小方框文字位置 */
+#section_1 .section_block .input-group label{
+	display:inline-block;
+    margin-bottom: 8px;
+}
+
+
+/*  */
+#section_1 .section_block #mc_embed_signup_scroll .mc-field-group {
+	margin-bottom:10px;
+}
+
+
+/* 必填說明文 */
+#section_1 .section_block #mc_embed_signup #mc_embed_signup_scroll .indicates-required {
+	color:#8d0000;
+	margin-bottom:20px;
+}
+
+
+
+/* Form 表格內 "*"紅色星星位置 */
+#section_1 .section_block #mc_embed_signup .mc-field-group .asterisk {
+    /*position: absolute; */
+	color:#8d0000;
+    right: 30px;
+    top: 38px;
+}
+
+
+/* 最下方 "勾選方框"位置 */
+#section_1 .section_block #mc_embed_signup .mc-field-group.input-group input{
+margin: 0px 10px 5px 0px;
+}
+
+
+
+#section_1 .section_block .button{
+    font-family: "Roboto", "Segoe UI", "Segoe UI Light", Arial, Lucida Grande, Microsoft JhengHei, 微軟正黑體, Microsoft YaHei, 微軟雅黑體 ,Tahoma, PMingLiU, 新細明體, simhei, sans-serif, Trebuchet MS, Lucida Sans Unicode, Verdana;
+	font-weight:400;
+}
+
+
+
+/* 超級大螢幕 */
+@Media (min-width: 1921px) and (max-width: 2560px) { 
+
+#section_1 .section_block  {
+margin: 130px 0 200px;
+}
+
+#section_1 .section_block #mc_embed_signup {
+	padding-left:15px;
+}
+
+}
+
+
+
+/* 大螢幕 */
+@Media (min-width: 1200px) and (max-width: 1920px) { 
+
+#section_1 .section_block #mc_embed_signup {
+	padding-left:15px;
+}
+
+}
+
+
+
+/* 一般pc小螢幕 */
+@Media (min-width: 980px) and (max-width: 1199px) { 
+
+#section_1 .section_block #mc_embed_signup {
+	padding-left:15px;
+}
+
+}
+
+
+
+
+/* 橫向智慧手機及其他更小解析度 */
+@Media (max-width: 480px) {
+	
+	
+/* 崁入表格區塊整體設定--寬度、字體 */
+#section_1 .section_block #mc_embed_signup {
+width: 100%;
+}
+
+
+#section_1 .section_block  {
+margin: 30px 0 40px;
+}
+
+	
+}	
+
